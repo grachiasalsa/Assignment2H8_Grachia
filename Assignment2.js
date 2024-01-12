@@ -1,4 +1,5 @@
-function submitForm() {
+function submitForm(event) {
+    event.preventDefault();
     const namaValue = document.getElementById("nama").value;
     const roleValue = document.getElementById("role").value;
     const availabilityValue = document.getElementById("availability").value;
@@ -14,9 +15,10 @@ function submitForm() {
     document.getElementById("profileLokasi").innerText = lokasiValue;
     document.getElementById("profileExperience").innerText = experienceValue;
     document.getElementById("profileEmail").innerText = emailValue;
+    div.classList.add('d-none');
 
-
-// document.getElementById("submitButton").addEventListener("click", submitForm);
+}
+document.getElementById("profileForm").addEventListener("submit", submitForm);
 
 const myEditData = document.getElementById("edit");
 myEditData.addEventListener('click', hilangForm)
@@ -29,5 +31,4 @@ function hilangForm() {
     } else {
         div.classList.add('d-none');
     };
-}
 }

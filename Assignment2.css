@@ -1,9 +1,10 @@
 .navbar {
-    background-color: #f8f9fa; 
+    background: rgb(173,129,148);
+    background: linear-gradient(90deg, rgba(173,129,148,1) 0%, rgba(114,130,148,1) 100%);  
 }
 
 .nav-link {
-    color: #007bff !important; 
+    color: white !important; 
 }
 
 .container {
